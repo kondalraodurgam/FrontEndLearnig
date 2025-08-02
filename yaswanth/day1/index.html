@@ -1,26 +1,22 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>Even and Odd Number</title>
+    <title>EvenorOdd Number</title>
   </head>
   <body>
     <h2>Even or Odd Number</h2>
-
-    <p>Enter any number:</p>
-    <input type="number" id="num" />
     <button onclick="addoreven()">Check Number</button>
-
-    <p id="result">Please enter a number.</p>
+    <p id="result"></p>
 
     <script>
       function addoreven() {
-        let number = document.getElementById("num").value;
-        let result = document.getElementById("result");
-
-        if (number % 2 == 0) {
-          result.textContent = number + " is an Even number.";
+        let num = prompt("Enter any one number");
+        if (num % 2 == 0) {
+          document.getElementById("result").innerText =
+            num + " It is an Even Number";
         } else {
-          result.textContent = number + " is an Odd number.";
+          document.getElementById("result").innerText =
+            num + " It is an Odd Number";
         }
       }
     </script>
