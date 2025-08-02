@@ -11,12 +11,14 @@
     <script>
       function addoreven() {
         let num = prompt("Enter any one number");
-        if (num % 2 == 0) {
-          document.getElementById("result").innerText =
-            num + " It is an Even Number";
-        } else {
-          document.getElementById("result").innerText =
-            num + " It is an Odd Number";
+        if (num > 0) {
+          if (num % 2 === 0) {
+            document.getElementById("result").innerText =
+              num + " It is an Even Number";
+          } else {
+            document.getElementById("result").innerText =
+              num + " It Is an odd number";
+          }
         }
       }
     </script>
