@@ -9,7 +9,6 @@ Welcome to the **FrontEndLearnig** repository! This is a collaborative project d
 ```bash
 FrontEndLearnig/
 ├── Day1/
-│   ├── kondal/
 │   ├── Jashwanth/
 │   ├── yaswanth/
 │   └── Triveni/
