@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Learning</title>
+</head>
+<body>
+  <h2>Showing the even or odd</h2>
+  <button onclick="num()">click here</button>
+  <p id="learning"> </p>
+  <script>
+     function num(){
+      let number = prompt("Enter a value:");
+      if (number%2===0){
+        document.getElementById("learning").innerText = number + " is EVEN";
+      }
+      else{
+        document.getElementById("learning").innerText = number + " is ODD";
+      }
+     }
+  </script>
+</body>
+</html>
