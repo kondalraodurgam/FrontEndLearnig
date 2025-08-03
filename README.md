@@ -16,6 +16,7 @@ FrontEndLearnig/
 ├── Day2/
 │   └── ...
 ├── README.md
+```
 
 🧠 ##Purpose
 The primary goal of this repository is to:
@@ -28,7 +29,7 @@ Learn from peer feedback and pull requests
 
 Track individual progress over time
 
-👨‍💻 Who Can Contribute?
+👨‍💻 ##Who Can Contribute?
 Anyone interested in improving their frontend skills!
 
 Whether you're:
@@ -41,26 +42,21 @@ A professional brushing up on basics
 
 You're welcome to contribute!
 
-✅ How to Contribute
+✅ ##How to Contribute
 Fork the repository
 
 Clone your forked repo:
-
-bash
-Copy
-Edit
+``
 git clone https://github.com/YOUR_USERNAME/FrontEndLearnig.git
 Create your folder inside the respective day folder:
+``
 
-swift
-Copy
-Edit
 FrontEndLearnig/Day1/YourName/
 Add your task files (HTML, CSS, JS)
 
 Push to your branch and create a Pull Request with your updates
 
-📆 Daily Task Format
+📆## Daily Task Format
 Each day’s task will be shared in the form of:
 
 A problem statement (UI or logic-based)
@@ -71,9 +67,6 @@ Submission format
 
 Example for Day 1:
 
-pgsql
-Copy
-Edit
 Task: Write a JavaScript program to check if a number is Even or Odd
 Files: index.html, script.js
 🌟 Contributors
