@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>EvenorOdd Number</title>
+  </head>
+  <body>
+    <h2>Even or Odd Number</h2>
+    <button onclick="addoreven()">Check Number</button>
+    <p id="result"></p>
+
+    <script>
+      function addoreven() {
+        let num = prompt("Enter any one number");
+
+        if (num % 2 === 0) {
+          document.getElementById("result").innerText =
+            num + " It is an Even Number";
+        } else {
+          document.getElementById("result").innerText =
+            num + " It Is an odd number";
+        }
+      }
+    </script>
+  </body>
+</html>
