@@ -1,0 +1,23 @@
+body {
+  background-color: aqua;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+#result {
+  font-size: 30px;
+}
+button {
+  background-color: chartreuse;
+  border: navajowhite;
+  padding: 10px 40px;
+  border-radius: 5px;
+  cursor: pointer;
+  color: black;
+}
+button:hover {
+  background-color: darkcyan;
+}
