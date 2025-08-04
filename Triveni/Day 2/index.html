@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Emoji finding</title>
+    </head>
+    <body>
+        <h2>Find the Emoji</h2>
+        <button onclick="emoji()">click here</button>
+        <p id="finding"></p>
+        <script>
+            function emoji(){
+                const mood = prompt("Enter your mood...");
+                if (mood==="happy"){
+                     document.getElementById("finding").innerText = "😊";
+                }
+                else if (mood==="sad"){
+                     document.getElementById("finding").innerText = "😢";
+                }
+                else if (mood==="angry"){
+                    document.getElementById("finding").innerText = "😡";
+                }
+                else {
+                    document.getElementById("finding").innerText = "🤔";
+                }
+            }
+        </script>
+    </body>
+</html>
