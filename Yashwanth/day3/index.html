@@ -1,0 +1,81 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF‑8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile card</title>
+    <style>
+      body {
+        font: 1rem/1.5 sans-serif;
+        margin: 1rem;
+      }
+      .cards {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+        gap: 1rem;
+      }
+      .card {
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        display: grid;
+        grid-template-rows: auto 150px 1fr;
+        overflow: hidden;
+        text-decoration: none;
+        color: inherit;
+        background-color: #fff;
+        transition: transform 0.15s;
+      }
+      .card:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+      }
+      .card img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .card h2 {
+        margin: 0.5rem;
+        font-size: 1.25rem;
+      }
+      .card .excerpt {
+        padding: 0.5rem;
+        font-size: 0.9rem;
+      }
+      .card footer {
+        margin-top: auto;
+        padding: 0.5rem;
+        font-size: 0.8rem;
+        color: #555;
+        border-top: 1px solid #eee;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="cards">
+      <a class="card" href="page1.html">
+        <h2></h2>
+        <img
+          src="https://source.unsplash.com/240x150/?nature"
+          alt="Nature Scene"
+        />
+        <div class="excerpt">Brief description of page one…</div>
+        <footer>Read More →</footer>
+      </a>
+
+      <a class="card" href="page2.html">
+        <h2>Page Two</h2>
+        <img
+          src="https://source.unsplash.com/240x150/?city"
+          alt="City Skyline"
+        />
+        <div class="excerpt">Quick summary of what this page covers…</div>
+        <footer>Go There →</footer>
+      </a>
+
+      <!-- Repeat cards as needed -->
+    </div>
+  </body>
+</html>
