@@ -6,19 +6,19 @@ const resetBtn = document.getElementById("resetbtn");
 const resultElement = document.getElementById("result");
 
 happyBtn.addEventListener("click", function () {
-  resultElement.textContent = "😊" + " YOUR IN A HAPPY MOOD";
+  resultElement.textContent = "😊" + " Your in a Happy Mood";
 });
 
 sadBtn.addEventListener("click", function () {
-  resultElement.textContent = "😢" + " YOUR IN A SAD MOOD";
+  resultElement.textContent = "😢" + " Your in a Sad Mood";
 });
 
 angryBtn.addEventListener("click", function () {
-  resultElement.textContent = "😡" + " YOUR IN A ANGRY MOOD";
+  resultElement.textContent = "😡" + " Your in a Angry Mood";
 });
 
 anythingelseBtn.addEventListener("click", function () {
-  resultElement.textContent = "🤔" + "YOU THINK  OF SOMETHING ELSE";
+  resultElement.textContent = "🤔" + "You Think  OF Something Else";
 });
 
 resetBtn.addEventListener("click", function () {
