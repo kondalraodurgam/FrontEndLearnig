@@ -9,7 +9,8 @@
         <p id="finding"></p>
         <script>
             function emoji(){
-                const mood = prompt("Enter your mood...");
+                let mood = prompt("Enter your mood...");
+                mood=mood.trim().toLowerCase();
                 if (mood==="happy"){
                      document.getElementById("finding").innerText = "😊";
                 }
