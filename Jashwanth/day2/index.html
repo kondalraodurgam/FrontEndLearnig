@@ -6,21 +6,19 @@
     <body>
         <h2>type your mood</h2>
         <button onclick="enteremoji()">Click It</button>
-        <p id="happy"></p>
-        <p id="sad"></p>
-        <p id="angry"></p>
-        <p id="thinking"></p> 
+        <p id="result"></p>
         <script>
         function enteremoji(){
     let mood = prompt("enter your mood");
         if(mood === "happy"){
-        document.getElementById("happy").innerText = ("😊");    
+        document.getElementById("result").innerText = ("😊");    
         }else if(mood === "sad"){
-         document.getElementById("sad").innerText = ("😢");
-        }else if(mood === "angry"){
-              document.getElementById("angry").innerText = ("😡");
-        }else(mood === "thinking")
-            document.getElementById("thinking").innerText = ("🤔");
+         document.getElementById("result").innerText = ("😢");
+        }else if(mood === "angry") {
+              document.getElementById("result").innerText = ("😡");
+        }else{
+            document.getElementById("result").innerText = ("🤔");
+        }
         }
       </script>
     </body>
