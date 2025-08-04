@@ -1,28 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>cheaking even or odd number</title>
-</head>
-<body>
+  </head>
+  <body>
     <h2>even number</h2>
     <button onclick="evenodd()">click it</button>
-    <P id="even"></P>
+    <p id="even"></p>
     <script>
-      function evenodd(){
-        let number=prompt("enter the number")
-        if(number%2===0){
-        document.getElementById("even").innerText=number+" it is even number";  
-        }else{
-            document.getElementById("even").innerText=number+" it is a odd number";
+      function evenodd() {
+        let number = prompt("enter the number");
+        if (number % 2 === 0) {
+          document.getElementById("even").innerText =
+            number + " it is even number";
+        } else {
+          document.getElementById("even").innerText =
+            number + " it is a odd number";
         }
-
-      }  
+      }
     </script>
-
- 
-
-    
-</body>
+  </body>
 </html>

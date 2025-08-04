@@ -1,19 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Check Your Mood</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Check Your Mood in Emoji</title>
   </head>
   <body>
-    <h1>Check Your Mood</h1>
+    <h2>Check Your Mood in Emoji</h2>
+    <button onclick="mood()">click here</button>
     <p id="result"></p>
-    <button id="happybtn">Happy</button>
-    <button id="angrybtn">Angry</button>
-    <button id="sadbtn">Sad</button>
-    <button id="anythingelsebtn">Anything Else</button>
-    <button id="resetbtn">Reset</button>
-    <script src="script.js"></script>
+    <script>
+      function mood() {
+        let mood = prompt("Enter your mood...");
+
+        if (mood === "happy") {
+          document.getElementById("result").innerText = "😊";
+        } else if (mood === "sad") {
+          document.getElementById("result").innerText = "😢";
+        } else if (mood === "angry") {
+          document.getElementById("result").innerText = "😡";
+        } else {
+          document.getElementById("result").innerText = "🤔";
+        }
+      }
+    </script>
   </body>
 </html>
