@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+<meta charset="UTF-8">    
+<title>Animated symbols</title>
+
+<style>   
+   body {
+    margin: auto;
+    padding: auto;
+    background-attachment: #187;
+    color: rgb(239, 29, 14);
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    height: 100vh;
+    position: relative;  
+     }
+    .symbol {
+     position: absolute;
+     font-size: 150px;
+     animation: float 5s ease-in-out infinite;
+    }
+    /*Animation*/
+    @keyframes float {
+        0% {
+         transform: translate(100vh) rotate(0deg);
+         opacity: 0;
+        }
+           20% {
+        opacity: 1;
+         }     
+      80% {
+        transform: translateY(-10vh) rotate(360deg);
+        opacity: 0;
+      }
+    }     
+</style>
+</html>
+</head>
+<body>
+     Symbols
+   <div class="symbol" style="left:10% ;animation-delay: 0.5s;">🥰</div> 
+   <div class="symbol" style="left:30% ;animation-delay: 0.10s;">🤗</div>           
+    <div class="symbol" style="left: 50% ;animation-delay:0.15s ;">🙈</div> 
+   <div class="symbol" style="left:70% ;animation-delay: 0.20s;">🙉</div> 
+   <div class="symbol" style="left:90% ;animation-delay: 0.25s;">🙊</div> 
+</body>
+</html> 
+
+
+
+<!-- /*<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Launch Symbols on Load</title>
+<style>
+
+    body {
+
+      margin-bottom: 0;
+      padding: 0;
+      text-align: center;
+      background-color: #777;
+      overflow: hidden;
+      height: 100vh;
+      position: relative;
+      font-family: Arial, sans-serif;
+    }
+    .symbol {
+      position: absolute;
+      font-size: 150px;
+      /* Page load లోనే animation ప్లే అవుతుంది */
+      animation: launchUp 2s ease-out 0s 1 forwards;
+    }
+    @keyframes launchUp {
+      0% {
+        transform: translateY(0);
+        opacity: 1;
+      }
+      100% {
+        transform: translateY(-100vh) rotate(360deg);
+        opacity: 0;
+      }
+    }
+</style>
+</head>
+<body>
+<div class="symbol" style="left: 20%;">🥰</div>
+<div class="symbol" style="left: 35%;">🤗</div>
+<div class="symbol" style="left: 50%;">🙈</div>
+<div class="symbol" style="left: 65%;">🙉</div>
+<div class="symbol" style="left: 80%;">🙊</div>
+</body>
+</html> -->
+
+  
+
+ 
