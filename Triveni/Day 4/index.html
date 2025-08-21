@@ -9,10 +9,10 @@
        <p id="learning"></p>
        <script>
          function check(){
-            let a = prompt("Enter one number");
-            let b = prompt("Enter second number");
+            let a = Number(prompt("Enter one number"));
+            let b = Number(prompt("Enter second number"));
            if (a>=0 && b >=0){
-            document.getElementById("learning").innerText = "Addition: " +( a+b);
+            document.getElementById("learning").innerText = "Addition: " + (a+b);
             document.getElementById("learning").innerText +="\nsubstraction: "+(a - b);
             document.getElementById("learning").innerText +="\nMultiplication: "+(a*b);
             document.getElementById("learning").innerText +="\nDivision: "+(a/b);
