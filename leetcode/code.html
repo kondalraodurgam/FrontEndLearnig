@@ -1,0 +1,27 @@
+int num,size,target;
+    scanf("%d",&size);
+    printf("nums=",num[size]);
+    for(int i=0;i<size;i++){
+    scanf("%d",&num[size]);
+    }
+   printf("target:");
+   scanf("%d",&target);
+   for(int i=0;i<=size;i++){
+    while(target==num[i]+num[i++]){
+        printf("%d",num[i,i++]);
+    }
+   }
+   #include<stdio.h>
+    int nums[] = {2,7,11,15};
+    int target=9;
+    int size=sizeof(nums)/ sizeof(nums[0]);
+    int i,j;
+ for (i = 0; i < size; i++) {
+    for(j=i+1;j<size;j++){
+        if(target = nums[i]+nums[j]){
+            printf("%d%d",i,j);
+        }
+   }
+ }
+ return 0;
+
