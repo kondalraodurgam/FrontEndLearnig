@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Arithmetic operation</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      fieldset {
+        width: 250px;
+        margin-top: 10px;
+      }
+      #learning {
+        margin-top: 15px;
+        padding: 10px;
+        border: 1px solid #ccc;
+        background: #f9f9f9;
+        white-space: pre-line; /* it will create a new line */
+      }
+    </style>
+  </head>
+  <body>
+    <h2>Arithmetic Operation on Two Numbers with Checkboxes</h2>
+
+    <label>First Number: <input type="number" id="num1" /></label><br /><br />
+    <label>Second Number: <input type="number" id="num2" /></label>
+
+    <fieldset>
+      <legend>Select Operations:</legend>
+      <br />
+      <label><input type="checkbox" id="add" checked /> Addition</label><br />
+      <label><input type="checkbox" id="sub" /> Subtraction</label><br />
+      <label><input type="checkbox" id="mul" /> Multiplication</label><br />
+      <label><input type="checkbox" id="div" /> Division</label><br />
+    </fieldset>
+    <br />
+
+    <button id="Result">Give a Solution</button>
+    <p id="learning"></p>
+
+    <script>
+      document.getElementById("Result").onclick = function () {
+        const a = Number(document.getElementById("num1").value);
+        const b = Number(document.getElementById("num2").value);
+        const output = document.getElementById("learning");
+        const results = [];
+
+        if (isNaN(a) || isNaN(b)) {
+          output.innerText = "Please enter valid numbers";
+          return;
+        }
+
+        if (document.getElementById("add").checked)
+          results.push("Addition: " + (a + b));
+
+        if (document.getElementById("sub").checked)
+          results.push("Subtraction: " + (a - b));
+
+        if (document.getElementById("mul").checked)
+          results.push("Multiplication: " + a * b);
+
+        if (document.getElementById("div").checked) {
+          results.push(
+            "Division: " + (b !== 0 ? a / b : "Cannot divide by zero")
+          );
+        }
+
+        output.innerText = results.length
+          ? results.join("\n")
+          : "No operation selected.";
+
+        // we use this also //
+        /*  if (results.length > 0) {
+  output.innerText = results.join("\n");
+} else {
+  output.innerText = "No operation selected.";
+}
+ */
+      };
+    </script>
+  </body>
+</html>
