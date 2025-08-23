@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Tint&display=swap" rel="stylesheet">
+
+    <title>Travel</title>
+    <style>
+      /* Full-page background */
+      html,
+      body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        background-image: url("your-background.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+        font-family: sans-serif;
+        color: white;
+      }
+ 
+      /* Header layout */
+      .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: rgba(0, 0, 0, 0.5);
+      }
+ 
+      .logo {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+      }
+      .logo img {
+        height: 40px;
+        width: auto;
+      }
+      .logo .icon_name {
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+ 
+      /* Navigation menu styles */
+      .menu ul {
+        display: flex;
+        gap: 15px;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      .menu ul li {
+        cursor: pointer;
+        padding: 5px 8px;
+        border-radius: 3px;
+        transition: background-color 0.3s, transform 0.3s;
+      }
+      .menu ul li:hover {
+        background-color: aqua;
+        color: black;
+        transform: scale(1.1);
+      }
+ 
+      /* Hero / banner section */
+      .main_content {
+        height: 500px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        background-color: rgba(0, 0, 0, 0.4);
+        padding: 20px;
+        font-family: "Bungee Tint", sans-serif;
+      }
+      .main_content h2 {
+        margin: 0;
+        font-size: 2.5rem;
+      }
+      .main_content p {
+        margin-top: 10px;
+        font-size: 1.2rem;
+      }
+ 
+      /* Services section layout */
+      .services_heading {
+        text-align: center;
+        margin-top: 40px;
+      }
+      .services {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+        padding: 20px;
+      }
+      .services .card {
+        max-width: 300px;
+        border: 1px solid #fff;
+        border-radius: 5px;
+        overflow: hidden;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.1);
+      }
+      .services .card img {
+        width: 100%;
+        height: auto;
+      }
+      .services .card p {
+        padding: 10px;
+      }
+ 
+      /* About us and gallery layout */
+      .about_us {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: space-around;
+        background-color: rgba(0, 0, 0, 0.3);
+        padding: 40px 20px;
+        margin-top: 20px;
+      }
+      .about_us .side_text {
+        max-width: 500px;
+        text-align: justify;
+      }
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        position: relative;
+      }
+      .gallery .gallery_text {
+        position: absolute;
+        top: 20px;
+        font-size: 2rem;
+        width: 100%;
+        text-align: center;
+      }
+      .gallery img {
+        max-width: 200px;
+        cursor: pointer;
+        transition: transform 0.5s;
+      }
+      .gallery img:hover {
+        transform: scale(1.1);
+      }
+ 
+      /* Footer layout */
+      .footer {
+        text-align: center;
+        background-color: rgb(235, 160, 160);
+        color: bisque;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+        margin-top: 40px;
+      }
+    </style>
+  </head>
+  <body>
+    <header class="header">
+      <div class="logo">
+        <img src="flight icon.png" alt="Travel Icon" />
+        <span class="icon_name">Travel</span>
+      </div>
+      <nav class="menu">
+        <ul>
+          <li>Home</li>
+          <li>Services</li>
+          <li>About us</li>
+          <li>Gallery</li>
+        </ul>
+      </nav>
+    </header>
+ 
+    <div class="main_content">
+      <h2>Travel with Happy 🥰</h2>
+      <p>Life is not meant to be lived in one place</p>
+    </div>
+ 
+    <h1 class="services_heading">Our Services</h1>
+    <div class="services">
+      <div class="card">
+        <img src="flight runway.jpeg" alt="Runway" />
+        <p>Live with no excuses and travel with no regrets</p>
+      </div>
+      <div class="card">
+        <img src="flight caller icon.webp" alt="Support" />
+        <p>We provide 24/7 service and support for you</p>
+      </div>
+      <div class="card">
+        <img src="airplane pic1.webp" alt="Budget Travel" />
+        <p>Travel with affordable and budget-friendly prices</p>
+      </div>
+    </div>
+ 
+    <div class="about_us">
+      <div class="side_text">
+        <h2>About Us</h2>
+        <p>
+          Find your peace in nature and discover the magic of the natural world.
+          Nature can be your sanctuary.
+        </p>
+      </div>
+    </div>
+ 
+    <div class="gallery">
+      <div class="gallery_text">Our Gallery</div>
+      <img src="flight1.jpeg" alt="" class="g1" />
+      <img src="flight2.jpeg" alt="" class="g2" />
+      <img src="flight3.jpeg" alt="" class="g3" />
+      <img src="flight4.jpeg" alt="" class="g4" />
+      <img src="flight5.jpeg" alt="" class="g5" />
+      <img src="flight6.jpeg" alt="" class="g6" />
+    </div>
+ 
+    <footer class="footer">
+      <div class="Address">
+        123 East Texas,<br />
+        Shamshabad, India
+      </div>
+      <div>
+        <p>Traveljessy33@gmail.com</p>
+        <p>+91 9381990766</p>
+        <p>&copy; 2025</p>
+      </div>
+    </footer>
+  </body>
+</html>
