@@ -22,3 +22,19 @@ var containduplicate = function (nums) {
 };
 console.log(containduplicate([1, 2, 3, 4, 4, 3])); // true
 console.log(containduplicate([3, 6, 7])); // false
+
+//example 3
+//use hash Table
+
+function duplicate(nums) {
+  const seen = {};
+  for (const x of nums) {
+    if (seen.hasOwnProperty(x)) {
+      return true;
+    }
+    seen[x] = true;
+  }
+  return false;
+}
+console.log(duplicate([5, 1, 2, 5])); // true
+console.log(duplicate([9, 8, 7])); // false
