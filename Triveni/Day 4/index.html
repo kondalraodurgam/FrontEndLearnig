@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Problem</title>
+    </head>
+    <body>
+        <h2>Arithmetic Operations of two Numbers</h2>
+       <button onclick="check()">click here</button>
+       <p id="learning"></p>
+       <script>
+         function check(){
+            let a = Number(prompt("Enter one number"));
+            let b = Number(prompt("Enter second number"));
+           if (a>=0 && b >=0){
+            document.getElementById("learning").innerText = "Addition: " + (a+b);
+            document.getElementById("learning").innerText +="\nsubstraction: "+(a - b);
+            document.getElementById("learning").innerText +="\nMultiplication: "+(a*b);
+            document.getElementById("learning").innerText +="\nDivision: "+(a/b);
+            document.getElementById("learning").innerText +="\nModulus division: "+(a%b);
+           }
+           else {
+            document.getElementById("learning").innerText = "Enter the valid value";
+           }
+         }
+       </script>
+    </body>
+</html>
