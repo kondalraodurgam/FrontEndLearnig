@@ -3,8 +3,8 @@ body {
 }
 
 main {
-  background-color: yellow;
-  color: red;
+  background-color: rgb(195, 64, 227);
+  color: rgb(17, 3, 8);
   margin-left: 10px;
   height: 60vh;
 }
@@ -26,16 +26,16 @@ footer {
 }
 
 nav {
-  background-color: green;
-  color: orange;
+  background-color: rgb(119, 198, 240);
+  color: rgb(105, 200, 78);
   padding: 1rem;
   height: 20px;
 }
 
 .sidebar1, .sidebar2 {
   flex-basis: 10%;
-  background-color: blue;
-  color: #000;
+  background-color: rgb(154, 197, 232);
+  color: #f42d2d;
 }
 
 .sidebar2 {
@@ -56,7 +56,7 @@ header, nav, main, .sidebar1, .sidebar2, footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 5px;
 }
 
 .wrapper {   /* ❌ You had space: . wrapper */
